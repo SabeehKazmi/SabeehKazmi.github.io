@@ -1,32 +1,83 @@
+/* General Styles */
 body {
-    background-color: #000;
-    color: #00FF00;
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
 }
 
-pre {
-    font-size: 18px;
-    margin: 20px 0;
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
-h2, h3 {
-    margin: 20px 0;
-    color: #00FF00;
+/* Header */
+.hero {
+  background-color: #111;
+  text-align: center;
+  padding: 100px 0;
 }
 
-p {
-    margin: 10px 0;
-    font-size: 16px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-a {
-    color: #00FF00;
-    text-decoration: none;
+.hero .subtitle {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 30px;
 }
 
-a:hover {
-    text-decoration: underline;
+.hero .bio {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero .contact {
+  margin-top: 30px;
+}
+
+.hero .contact a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Lists */
+.education-list, .experience-list, .skills-list, .certification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.education-list li, .experience-list li, .certification-list li {
+  margin-bottom: 20px;
+}
+
+.skills-list li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Other Styles */
+.skill {
+  /* Already defined in the HTML */
 }
