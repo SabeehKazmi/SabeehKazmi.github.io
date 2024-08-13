@@ -1,83 +1,16 @@
-/* General Styles */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fff; /* Initial background color */
+  color: #333; /* Initial text color */
+}
+
+/* Dynamic color adjustment */
+body[data-theme="dark"] {
   background-color: #222;
   color: #fff;
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
-}
-
-/* Header */
-.hero {
-  background-color: #111;
-  text-align: center;
-  padding: 100px 0;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero .subtitle {
-  font-size: 1.5rem;
-  color: #888;
-  margin-bottom: 30px;
-}
-
-.hero .bio {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.hero .contact {
-  margin-top: 30px;
-}
-
-.hero .contact a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-/* Sections */
-.section {
-  margin-bottom: 60px;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-/* Lists */
-.education-list, .experience-list, .skills-list, .certification-list {
-  list-style: none;
-  padding: 0;
-}
-
-.education-list li, .experience-list li, .certification-list li {
-  margin-bottom: 20px;
-}
-
-.skills-list li {
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-/* Other Styles */
-.skill {
-  /* Already defined in the HTML */
-}
+/* Other styles */
+/* ... */
