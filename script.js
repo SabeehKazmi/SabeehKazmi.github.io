@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const asciiArt1 = document.getElementById("ascii-art");
     const asciiArt2 = document.getElementById("ascii-art-2");
+    const reverseButton = document.getElementById('reverse');
+    const entertainButton = document.getElementById('entertain-yourself');
 
     // Function to toggle between images when clicked on the actual ASCII content
     function toggleImage(event) {
@@ -19,4 +21,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add event listeners to both images
     asciiArt1.addEventListener("click", toggleImage);
     asciiArt2.addEventListener("click", toggleImage);
+
+    // Reverse the colors
+    reverseButton.addEventListener('click', function() {
+        console.log('Button clicked!');
+        document.body.classList.toggle('reverse-colors');
+        
+        // Also toggle the button color scheme
+        reverseButton.classList.toggle('reverse-colors');
+        entertainButton.classList.toggle('reverse-colors');
+    });
+
+    // Open about.html page on button click
+    document.getElementById('go-to-about').addEventListener('click', function() {
+        window.location.href = 'about.html';
+    });
+
+    // Hides/displays "Entertain Yourself" button
+    entertainButton.style.display = 'none'; // Ensure it's hidden initially
+    reverseButton.addEventListener('click', function() {
+        if (entertainButton.style.display === 'none' || entertainButton.style.display === '') {
+            entertainButton.style.display = 'inline-block'; // or 'block', depending on your layout
+        } else {
+            entertainButton.style.display = 'none';
+        }
+    });
 });

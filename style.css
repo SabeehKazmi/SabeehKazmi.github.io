@@ -1,19 +1,64 @@
 body {
-    background-color: black;
-    color: aliceblue;
-    font-family: "Courier New", Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 19, 34);
+    font-family: "Josefin Sans", sans-serif;
     text-align: center;
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.reverse-colors {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+button.reverse-colors {
+    background-color: black;
+    color: white;
 }
 
 #ascii-art {
     margin: 0 auto;
     white-space: pre-wrap;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 #ascii-art-2 {
     margin: 0 auto;
     white-space: pre-wrap;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+#entertain-yourself {
     display: none;
 }
