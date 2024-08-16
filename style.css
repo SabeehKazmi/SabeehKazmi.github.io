@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+#ascii-art {
+    margin: 0 auto;
+    white-space: pre-wrap;
+    display: block;
+}
+
+#ascii-art-2 {
+    margin: 0 auto;
+    white-space: pre-wrap;
+    display: none;
+}
