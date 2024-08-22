@@ -31,19 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
         reverseButton.classList.toggle('reverse-colors');
         entertainButton.classList.toggle('reverse-colors');
     });
-
-    // Open about.html page on button click
-    document.getElementById('go-to-about').addEventListener('click', function() {
-        window.location.href = 'about.html';
-    });
-
-    // Hides/displays "Entertain Yourself" button
-    entertainButton.style.display = 'none'; // Ensure it's hidden initially
-    reverseButton.addEventListener('click', function() {
-        if (entertainButton.style.display === 'none' || entertainButton.style.display === '') {
-            entertainButton.style.display = 'inline-block'; // or 'block', depending on your layout
-        } else {
-            entertainButton.style.display = 'none';
-        }
-    });
 });
