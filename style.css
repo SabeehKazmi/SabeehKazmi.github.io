@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #E6E6FA;
     color: rgb(1, 19, 34);
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
@@ -120,4 +120,17 @@ div {
     height: 20px;
     background-color: #ecb626;
     z-index: -1;
+}
+
+.container::before,
+.container::after,
+.container .line-3 {
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the entire container */
+.container:hover::before,
+.container:hover::after,
+.container:hover .line-3 {
+    background-color: #E6E6FA;
 }
